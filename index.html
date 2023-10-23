@@ -10,7 +10,7 @@
             text-align: center;
             padding: 100px 0;
             margin: 0;
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://source.unsplash.com/random/1920x1080?technology');
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://source.unsplash.com/random/1920x1080?abstract,smooth');
             background-size: cover;
             background-position: center;
             color: #fff;
@@ -20,46 +20,27 @@
             justify-content: center;
         }
         h1 {
-            font-size: 2.5em;
+            font-size: 3em;
             margin-bottom: 20px;
         }
         p {
-            font-size: 1.2em;
-            margin-bottom: 30px;
-        }
-        .timer {
             font-size: 1.5em;
             margin-bottom: 30px;
+        }
+        .additional-content {
+            font-size: 1.2em;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>ZenTech</h1>
-    <p>Coming Soon...</p>
-    <div class="timer" id="timer">
-        00 : 00 : 00 : 00
+    <h1>Coming Soon</h1>
+    <p>ZenTech is currently under development. Stay tuned for exciting updates!</p>
+    <div class="additional-content">
+        <p>Why ZenTech?</p>
+        <p>At ZenTech, we believe in creating technological solutions that bring peace and simplicity to your business operations.</p>
+        <p>Our team is working hard to bring you a platform that integrates seamlessly with your needs, ensuring efficiency and productivity.</p>
+        <p>Thank you for your patience and support. We can't wait to unveil what we've been working on!</p>
     </div>
-    <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("2023-12-31 00:00:00").getTime();
-
-        // Update the countdown every second
-        var x = setInterval(function() {
-            var now = new Date().getTime();
-            var distance = countDownDate - now;
-
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            document.getElementById("timer").innerHTML = days + " : " + hours + " : " + minutes + " : " + seconds;
-
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("timer").innerHTML = "LAUNCHED";
-            }
-        }, 1000);
-    </script>
 </body>
 </html>
